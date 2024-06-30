@@ -1,0 +1,31 @@
+React nedir? 
+-Kullanıcı arayüzleri oluşturmak için kullanılan bir javascript kütüphanesidir.Facebook tarafından geliştirilmektedir.
+
+Reactın temel özellikleri nelerdir?
+
+-Bileşen tabanlı mimari
+-JSX
+-sanal DOM
+-tek yönlü veri akışı
+
+Virtual DOM nedir ve nasıl çalışır?
+
+-Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümde yeniden render ederek performans arttırır
+
+React Hookları nelerdir? 
+
+-React hookları bileşenlerde state ve yaşam döngüsü metotları kullanmayı sağlar
+
+useState ve useEffect nedir?
+
+-useState fonskiyon bileşenlerinde durum yönetimi için kullanılan yöntemdir
+-useEffect fonkisyon bileşenlerinde yan etki yönetimi için kullanılan yöntemdir
+
+React state managament nasıl yapılır ?
+
+-React da state managament bileşenler arasında veri paylaşımını ve uygulama durumunu yönetirken Context API global state'i daha basit bir şekilde sağlar.
+
+-Redux ve Context API hakkında bilgi verin ?
+
+-Uygulama durumunu tek bir "store" içinde tutmak ve bu durumu yönetmek için "actions" ve "reducers" kullanmaktır.State yönetimi için kullanılan bir kütüphanedir (Redux)
+-React'in içerisinde bulunan ve bileşenler arasında veri paylaşımını kolaylaştıran bir özelliktir (Context API)
