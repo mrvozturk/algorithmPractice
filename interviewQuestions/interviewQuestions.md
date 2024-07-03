@@ -10,12 +10,10 @@
   - [Tek Yönlü Veri Akışı](#tek-yönlü-veri-akışı)
 - [Virtual DOM Nedir ve Nasıl Çalışır?](#virtual-dom-nedir-ve-nasıl-çalışır)
 - [React Hookları Nelerdir?](#react-hookları-nelerdir)
-
-  - [useState](#usestate)
-  - [useEffect](#useeffect)
-
+  - [1. useState](#1-usestate)
+  - [2. useEffect](#2-useeffect)
 - [React State Management Nasıl Yapılır?](#react-state-management-nasıl-yapılır)
-- [Redux ve Context API Nedir?](#redux-ve-context-api-nedir?)
+- [Redux ve Context API Nedir?](#redux-ve-context-api-nedir)
 
 ## React Nedir?
 
@@ -52,11 +50,11 @@
 
 - React hookları, fonksiyon bileşenlerinde state ve yaşam döngüsü metotları kullanmayı sağlar. En yaygın kullanılan hooklar `useState` ve `useEffect`'tir.
 
-### useState
+### 1. useState
 
 - **useState:** Fonksiyon bileşenlerinde durum yönetimi için kullanılan bir yöntemdir. Bileşenin state'ini tanımlamayı ve güncellemeyi sağlar.
 
-### useEffect
+### 2. useEffect
 
 - **useEffect:** Fonksiyon bileşenlerinde yan etki yönetimi için kullanılan bir yöntemdir. Bileşenin yaşam döngüsü boyunca belirli işlemlerin gerçekleştirilmesini sağlar.
 
