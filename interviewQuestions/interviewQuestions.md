@@ -4,16 +4,18 @@
 
 - [React Nedir?](#react-nedir)
 - [React'ın Temel Özellikleri Nelerdir?](#reactın-temel-özellikleri-nelerdir)
-  - [1. Bileşen Tabanlı Mimari](#1-bileşen-tabanlı-mimari)
-  - [2. JSX](#2-jsx)
-  - [3. Sanal DOM](#3-sanal-dom)
-  - [4. Tek Yönlü Veri Akışı](#4-tek-yönlü-veri-akışı)
+  - [Bileşen Tabanlı Mimari](#bileşen-tabanlı-mimari)
+  - [JSX](#jsx)
+  - [Sanal DOM](#sanal-dom)
+  - [Tek Yönlü Veri Akışı](#tek-yönlü-veri-akışı)
 - [Virtual DOM Nedir ve Nasıl Çalışır?](#virtual-dom-nedir-ve-nasıl-çalışır)
 - [React Hookları Nelerdir?](#react-hookları-nelerdir)
-  - [1. useState](#1-usestate)
-  - [2. useEffect](#2-useeffect)
+
+  - [useState](#usestate)
+  - [useEffect](#useeffect)
+
 - [React State Management Nasıl Yapılır?](#react-state-management-nasıl-yapılır)
-- [Redux ve Context API Nedir?](#redux-ve-context-api-nedir)
+- [Redux ve Context API Nedir?](#redux-ve-context-api-nedir?)
 
 ## React Nedir?
 
@@ -21,24 +23,24 @@
 
 ## React'ın Temel Özellikleri Nelerdir?
 
-- **1. Bileşen Tabanlı Mimari**
-- **2. JSX**
-- **3. Sanal DOM**
-- **4. Tek Yönlü Veri Akışı**
+- **Bileşen Tabanlı Mimari**
+- **JSX**
+- **Sanal DOM**
+- **Tek Yönlü Veri Akışı**
 
-### 1. Bileşen Tabanlı Mimari
+### Bileşen Tabanlı Mimari
 
 - Kullanıcı arayüzlerini bağımsız, yeniden kullanılabilir bileşenler halinde oluşturma imkanı sağlar.
 
-### 2. JSX
+### JSX
 
 - JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
 
-### 3. Sanal DOM
+### Sanal DOM
 
 - Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performans artırır.
 
-### 4. Tek Yönlü Veri Akışı
+### Tek Yönlü Veri Akışı
 
 - Veri, üst bileşenden alt bileşene doğru akar, bu da bileşenlerin daha öngörülebilir ve anlaşılır olmasını sağlar.
 
@@ -50,11 +52,11 @@
 
 - React hookları, fonksiyon bileşenlerinde state ve yaşam döngüsü metotları kullanmayı sağlar. En yaygın kullanılan hooklar `useState` ve `useEffect`'tir.
 
-### 1. useState
+### useState
 
 - **useState:** Fonksiyon bileşenlerinde durum yönetimi için kullanılan bir yöntemdir. Bileşenin state'ini tanımlamayı ve güncellemeyi sağlar.
 
-### 2. useEffect
+### useEffect
 
 - **useEffect:** Fonksiyon bileşenlerinde yan etki yönetimi için kullanılan bir yöntemdir. Bileşenin yaşam döngüsü boyunca belirli işlemlerin gerçekleştirilmesini sağlar.
 
