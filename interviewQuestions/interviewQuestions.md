@@ -1,8 +1,22 @@
 # React Hakkında
 
+## İçindekiler
+
+- [React Nedir?](#react-nedir)
+- [React'ın Temel Özellikleri Nelerdir?](#reactın-temel-özellikleri-nelerdir)
+  - [Bileşen Tabanlı Mimari](#bileşen-tabanlı-mimari)
+  - [JSX](#jsx)
+  - [Sanal DOM](#sanal-dom)
+  - [Tek Yönlü Veri Akışı](#tek-yönlü-veri-akışı)
+- [Virtual DOM Nedir ve Nasıl Çalışır?](#virtual-dom-nedir-ve-nasıl-çalışır)
+- [React Hookları Nelerdir?](#react-hookları-nelerdir)
+  - [useState ve useEffect Nedir?](#usestate-ve-useeffect-nedir)
+- [React State Management Nasıl Yapılır?](#react-state-management-nasıl-yapılır)
+  - [Redux ve Context API Hakkında Bilgi](#redux-ve-context-api-hakkında-bilgi)
+
 ## React Nedir?
 
-React, kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook tarafından geliştirilmektedir.
+\*React, kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook tarafından geliştirilmektedir.
 
 ## React'ın Temel Özellikleri Nelerdir?
 
@@ -13,15 +27,15 @@ React, kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript küt
 
 ### Bileşen Tabanlı Mimari
 
-Kullanıcı arayüzlerini bağımsız, yeniden kullanılabilir bileşenler halinde oluşturma imkanı sağlar.
+\*Kullanıcı arayüzlerini bağımsız, yeniden kullanılabilir bileşenler halinde oluşturma imkanı sağlar.
 
 ### JSX
 
-JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
+\*JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
 
 ### Sanal DOM
 
-Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performans artırır.
+\*Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performans artırır.
 
 ### Tek Yönlü Veri Akışı
 
