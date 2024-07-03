@@ -20,10 +20,10 @@
 
 ## React'ın Temel Özellikleri Nelerdir?
 
-- **Bileşen Tabanlı Mimari**: Kullanıcı arayüzlerini bağımsız, yeniden kullanılabilir bileşenler halinde oluşturma imkanı sağlar.
-- **JSX**: JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
-- **Sanal DOM**: Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performans artırır.
-- **Tek Yönlü Veri Akışı**: Veri, üst bileşenden alt bileşene doğru akar, bu da bileşenlerin daha öngörülebilir ve anlaşılır olmasını sağlar.
+- **Bileşen Tabanlı Mimari**
+- **JSX**
+- **Sanal DOM**
+- **Tek Yönlü Veri Akışı**
 
 ### Bileşen Tabanlı Mimari
 
