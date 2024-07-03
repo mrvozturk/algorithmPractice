@@ -10,7 +10,10 @@
   - [Tek Yönlü Veri Akışı](#tek-yönlü-veri-akışı)
 - [Virtual DOM Nedir ve Nasıl Çalışır?](#virtual-dom-nedir-ve-nasıl-çalışır)
 - [React Hookları Nelerdir?](#react-hookları-nelerdir)
-  - [useState ve useEffect Nedir?](#usestate-ve-useeffect-nedir)
+
+  - [useState](#usestate)
+  - [useEffect](#useeffect)
+
 - [React State Management Nasıl Yapılır?](#react-state-management-nasıl-yapılır)
 - [Redux ve Context API Nedir?](#redux-ve-context-api-nedir?)
 
@@ -49,16 +52,19 @@
 
 - React hookları, fonksiyon bileşenlerinde state ve yaşam döngüsü metotları kullanmayı sağlar. En yaygın kullanılan hooklar `useState` ve `useEffect`'tir.
 
-### useState ve useEffect Nedir?
+### useState
 
 - **useState:** Fonksiyon bileşenlerinde durum yönetimi için kullanılan bir yöntemdir. Bileşenin state'ini tanımlamayı ve güncellemeyi sağlar.
+
+### useEffect
+
 - **useEffect:** Fonksiyon bileşenlerinde yan etki yönetimi için kullanılan bir yöntemdir. Bileşenin yaşam döngüsü boyunca belirli işlemlerin gerçekleştirilmesini sağlar.
 
 ## React State Management Nasıl Yapılır?
 
 - React'ta state management, bileşenler arasında veri paylaşımını ve uygulama durumunu yönetirken Context API global state'i daha basit bir şekilde sağlar. Daha karmaşık uygulamalar için Redux gibi kütüphaneler kullanılabilir.
 
-### Redux ve Context API Nedir?
+## Redux ve Context API Nedir?
 
 - **Redux:** Uygulama durumunu tek bir "store" içinde tutmak ve bu durumu yönetmek için "actions" ve "reducers" kullanmaktır. State yönetimi için kullanılan popüler bir kütüphanedir.
 - **Context API:** React'in içerisinde bulunan ve bileşenler arasında veri paylaşımını kolaylaştıran bir özelliktir. Küçük ve orta ölçekli uygulamalarda global state yönetimi için kullanılabilir.
