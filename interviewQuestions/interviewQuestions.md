@@ -4,10 +4,10 @@
 
 - [React Nedir?](#react-nedir)
 - [React'ın Temel Özellikleri Nelerdir?](#reactın-temel-özellikleri-nelerdir)
-  - [Bileşen Tabanlı Mimari](#bileşen-tabanlı-mimari)
-  - [JSX](#jsx)
-  - [Sanal DOM](#sanal-dom)
-  - [Tek Yönlü Veri Akışı](#tek-yönlü-veri-akışı)
+  - [1. Bileşen Tabanlı Mimari](#1-bileşen-tabanlı-mimari)
+  - [2. JSX](#2-jsx)
+  - [3. Sanal DOM](#3-sanal-dom)
+  - [4. Tek Yönlü Veri Akışı](#4-tek-yönlü-veri-akışı)
 - [Virtual DOM Nedir ve Nasıl Çalışır?](#virtual-dom-nedir-ve-nasıl-çalışır)
 - [React Hookları Nelerdir?](#react-hookları-nelerdir)
   - [1. useState](#1-usestate)
@@ -21,24 +21,24 @@
 
 ## React'ın Temel Özellikleri Nelerdir?
 
-- **Bileşen Tabanlı Mimari**
-- **JSX**
-- **Sanal DOM**
-- **Tek Yönlü Veri Akışı**
+- **1. Bileşen Tabanlı Mimari**
+- **2. JSX**
+- **3. Sanal DOM**
+- **4. Tek Yönlü Veri Akışı**
 
-### Bileşen Tabanlı Mimari
+### 1. Bileşen Tabanlı Mimari
 
 - Kullanıcı arayüzlerini bağımsız, yeniden kullanılabilir bileşenler halinde oluşturma imkanı sağlar.
 
-### JSX
+### 2. JSX
 
 - JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
 
-### Sanal DOM
+### 3. Sanal DOM
 
 - Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performans artırır.
 
-### Tek Yönlü Veri Akışı
+### 4. Tek Yönlü Veri Akışı
 
 - Veri, üst bileşenden alt bileşene doğru akar, bu da bileşenlerin daha öngörülebilir ve anlaşılır olmasını sağlar.
 
