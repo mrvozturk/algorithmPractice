@@ -16,38 +16,38 @@
 
 ## React Nedir?
 
-\*React, kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook tarafından geliştirilmektedir.
+- React, kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook tarafından geliştirilmektedir.
 
 ## React'ın Temel Özellikleri Nelerdir?
 
-- **Bileşen Tabanlı Mimari**
-- **JSX**
-- **Sanal DOM**
-- **Tek Yönlü Veri Akışı**
+- **Bileşen Tabanlı Mimari**: Kullanıcı arayüzlerini bağımsız, yeniden kullanılabilir bileşenler halinde oluşturma imkanı sağlar.
+- **JSX**: JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
+- **Sanal DOM**: Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performans artırır.
+- **Tek Yönlü Veri Akışı**: Veri, üst bileşenden alt bileşene doğru akar, bu da bileşenlerin daha öngörülebilir ve anlaşılır olmasını sağlar.
 
 ### Bileşen Tabanlı Mimari
 
-\*Kullanıcı arayüzlerini bağımsız, yeniden kullanılabilir bileşenler halinde oluşturma imkanı sağlar.
+- Kullanıcı arayüzlerini bağımsız, yeniden kullanılabilir bileşenler halinde oluşturma imkanı sağlar.
 
 ### JSX
 
-\*JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
+- JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
 
 ### Sanal DOM
 
-\*Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performans artırır.
+- Gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performans artırır.
 
 ### Tek Yönlü Veri Akışı
 
-Veri, üst bileşenden alt bileşene doğru akar, bu da bileşenlerin daha öngörülebilir ve anlaşılır olmasını sağlar.
+- Veri, üst bileşenden alt bileşene doğru akar, bu da bileşenlerin daha öngörülebilir ve anlaşılır olmasını sağlar.
 
 ## Virtual DOM Nedir ve Nasıl Çalışır?
 
-Virtual DOM, gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performansı artırır. Bu sayede büyük ve karmaşık uygulamalarda bile hızlı ve verimli bir kullanıcı deneyimi sağlanır.
+- Virtual DOM, gerçek DOM'un hafif bir kopyasıdır. React bileşenlerinde değişiklik olduğunda sadece güncellenen bölümü yeniden render ederek performansı artırır. Bu sayede büyük ve karmaşık uygulamalarda bile hızlı ve verimli bir kullanıcı deneyimi sağlanır.
 
 ## React Hookları Nelerdir?
 
-React hookları, fonksiyon bileşenlerinde state ve yaşam döngüsü metotları kullanmayı sağlar. En yaygın kullanılan hooklar `useState` ve `useEffect`'tir.
+- React hookları, fonksiyon bileşenlerinde state ve yaşam döngüsü metotları kullanmayı sağlar. En yaygın kullanılan hooklar `useState` ve `useEffect`'tir.
 
 ### useState ve useEffect Nedir?
 
@@ -56,9 +56,9 @@ React hookları, fonksiyon bileşenlerinde state ve yaşam döngüsü metotları
 
 ## React State Management Nasıl Yapılır?
 
-React'ta state management, bileşenler arasında veri paylaşımını ve uygulama durumunu yönetirken Context API global state'i daha basit bir şekilde sağlar. Daha karmaşık uygulamalar için Redux gibi kütüphaneler kullanılabilir.
+- React'ta state management, bileşenler arasında veri paylaşımını ve uygulama durumunu yönetirken Context API global state'i daha basit bir şekilde sağlar. Daha karmaşık uygulamalar için Redux gibi kütüphaneler kullanılabilir.
 
-### Redux ve Context API Hakkında Bilgi
+### Redux ve Context API Nedir?
 
 - **Redux:** Uygulama durumunu tek bir "store" içinde tutmak ve bu durumu yönetmek için "actions" ve "reducers" kullanmaktır. State yönetimi için kullanılan popüler bir kütüphanedir.
 - **Context API:** React'in içerisinde bulunan ve bileşenler arasında veri paylaşımını kolaylaştıran bir özelliktir. Küçük ve orta ölçekli uygulamalarda global state yönetimi için kullanılabilir.
