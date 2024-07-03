@@ -12,7 +12,7 @@
 - [React Hookları Nelerdir?](#react-hookları-nelerdir)
   - [useState ve useEffect Nedir?](#usestate-ve-useeffect-nedir)
 - [React State Management Nasıl Yapılır?](#react-state-management-nasıl-yapılır)
-  - [Redux ve Context API Hakkında Bilgi](#redux-ve-context-api-hakkında-bilgi)
+  - [Redux ve Context API Nedir?](#redux-ve-context-api-nedir?)
 
 ## React Nedir?
 
