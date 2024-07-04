@@ -1,59 +1,53 @@
-function ayniharfleribul(string) {
+```js
+function findSameLetters(string) {
   // Bir fonksiyon oluşturuyoruz ve bu fonksiyona parametre olarak bir string veriyoruz.
 
   let input_list = string.split(''); // string.split('') ile stringi karakterlerine ayırıyoruz.
 
-  let input_seen = []; //ilktekraredenkarakteri saklayacağımız boş bir array oluşturuyoruz.
+  let input_seen = []; // ilk tekrar eden karakteri saklayacağımız boş bir array oluşturuyoruz.
 
-  let ilktekraredenkarakter = null; // Ilk tekrar eden karakteri tutacağımız bir değişken oluşturuyoruz.Başlangıçta null atıyoruz.
+  let firstRecurringCharacter = null; // İlk tekrar eden karakteri tutacağımız bir değişken oluşturuyoruz. Başlangıçta null atıyoruz.
 
   // for döngüsü ile input_listteki her bir karaktere bakıyoruz.
   for (const element of input_list) {
-    const findableChar = element; //findableChar değişkeni döngüdeki mevcut karakteri temsil ediyor. Döngü içierisindeki mevcut karakteri findableChar değişkenine atıyoruz.
+    const currentCharacter = element; // currentCharacter değişkeni döngüdeki mevcut karakteri temsil ediyor.
 
     const found = input_seen.find(x => {
-      return x == findableChar;
-    }); // input_seen dizisinde findableChar değerine eşit bir karakter olup olmadığını kontrol ediyoruz.
+      return x === currentCharacter;
+    }); // input_seen dizisinde currentCharacter değerine eşit bir karakter olup olmadığını kontrol ediyoruz.
 
-    if (found !== undefined && ilktekraredenkarakter === null) {
-      ilktekraredenkarakter = found;
-    } // Eğer found undefined değilse ve ilktekraredenkarakter hala null ise,Bu karakteri ilktekraredenkarakter değişkenine atıyoruz.
+    if (found !== undefined && firstRecurringCharacter === null) {
+      firstRecurringCharacter = found;
+    } // Eğer found undefined değilse ve firstRecurringCharacter hala null ise, bu karakteri firstRecurringCharacter değişkenine atıyoruz.
 
     input_seen.push(element); // Mevcut karakteri input_seen dizisine ekliyoruz.
-
-    // input_seen de ki karakterler ile input_listteki karakterle uyuşan varmı bakılır
-    // findableChar degerinin input_seen icerisinde varligi kontrol edilir.
   }
-  return ilktekraredenkarakter; // İlk tekrar eden karakteri döndürüyoruz.
+  return firstRecurringCharacter; // İlk tekrar eden karakteri döndürüyoruz.
 }
 
-console.log(ayniharfleribul('abcbc')); // Fonksiyonu 'abcbc' stringi ile test ediyoruz ve ilk tekrar eden karakteri konsola yazdırıyoruz.
+console.log(findSameLetters('abcbc')); // Fonksiyonu 'abcbc' stringi ile test ediyoruz ve ilk tekrar eden karakteri konsola yazdırıyoruz.
 
-function enKüçükEksikPozitifTamSayı(dizi) {
-  // fonksiyon dizi adında bir parametre alır
-  let pozitifsayılar = dizi.filter(numara => numara > 0);
-  // dizi içerisindeki pozitif sayıları filtreler ve pozitifsayılar adında bir dizi oluşturur
-  if (pozitifsayılar.length === 0) return 1;
-  // pozisitifsayılar dizisinin uzunluğu 0 ise 1'i döndürecek
-  pozitifsayılar.sort((a, b) => a - b);
-  // pozitifsayılar dizisini sıralar küçükten büyüğe sıralama gerçekleştirir
-  let eksik = 1; // eksik degeri bulmak için değişken tanımlıyoruz
+```
+function findSmallestMissingPositiveInteger(array) {
+  // Bir fonksiyon oluşturuyoruz ve bu fonksiyona parametre olarak bir dizi veriyoruz.
 
-  for (let value of pozitifsayılar) {
-    // pozitifsayılar dizisini döngüye alıp pozitif tam sayıyı alıyoruz
-    // value değişkeni pozitifsayılar dizisindeki her bir elemanı temsil eder
-    if (value !== eksik) {
-      // value değeri eksik değerine eşit değilse
-      // eksik değeri bulduğumuz eksik pozitif tam sayıyı temsil eder.
+  let positiveNumbers = array.filter(number => number > 0); // Dizi içerisindeki pozitif sayıları filtreler ve positiveNumbers adında bir dizi oluşturur.
 
-      return eksik; // eksik değeri döndürecek
+  if (positiveNumbers.length === 0) return 1; // Eğer positiveNumbers dizisinin uzunluğu 0 ise 1 döndürür.
+
+  positiveNumbers.sort((a, b) => a - b); // positiveNumbers dizisini küçükten büyüğe sıralar.
+
+  let missing = 1; // missing değerini bulmak için bir değişken tanımlıyoruz.
+
+  for (let value of positiveNumbers) {
+    // positiveNumbers dizisini döngüye alıp her bir pozitif tam sayıyı kontrol ediyoruz.
+    if (value !== missing) {
+      // value değeri missing değerine eşit değilse
+      return missing; // missing değerini döndürüyoruz.
     }
-
-    // Eğer value, eksik değerine eşitse, eksik değeri bir artırarak devam ederiz.
-    eksik++; // eksik = pozitifler[i] + 1;
+    missing++; // Eğer value missing değerine eşitse, missing değerini bir artırarak devam ediyoruz.
   }
-  // Döngü sonunda eksik değeri, dizideki tüm pozitif tam sayılar sıralı olduğunda bir sonraki eksik tam sayıyı temsil eder.
-  return eksik;
+  return missing; // Döngü sonunda missing değeri, dizideki tüm pozitif tam sayılar sıralı olduğunda bir sonraki eksik tam sayıyı temsil eder.
 }
 
-console.log(enKüçükEksikPozitifTamSayı([-3, -2, -1, 0, 1])); // Çıktı: 2
+console.log(findSmallestMissingPositiveInteger([-3, -2, -1, 0, 1])); // Fonksiyonu [-3, -2, -1, 0, 1] dizisi ile test ediyoruz ve sonucu konsola yazdırıyoruz.
