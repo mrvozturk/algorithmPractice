@@ -21,3 +21,4 @@ function findSmallestMissingPositiveInteger(array) {
 }
 
 console.log(findSmallestMissingPositiveInteger([-3, -2, -1, 0, 1])); // Fonksiyonu [-3, -2, -1, 0, 1] dizisi ile test ediyoruz ve sonucu konsola yazdırıyoruz.
+
