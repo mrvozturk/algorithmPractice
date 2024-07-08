@@ -17,9 +17,9 @@ function findEvenNumbers(array) {
   // bir fonskiyon oluşturuyoruz ve bu fonksiyona parametre olarak bir dizi veriyoruz
   let evenNumbers = []; // çift sayıların geleceği boş bir dizi oluşturuyoruz
 
-  for (let numbers of array) {
-    if (numbers % 2 === 0) {
-      evenNumbers.push(numbers);
+  for (let number of array) {
+    if (number % 2 === 0) {
+      evenNumbers.push(number);
     }
   } // for döngüsü ile arraydeki her bir sayıya bakıyoruz ve eğer sayılar 2 ye bölündüğünde kalan 0 ise yani sıfıra eşitse çift sayı döndürüyoruz
   // Eğer sayı çift ise, evenNumbers dizisine ekleniyor
