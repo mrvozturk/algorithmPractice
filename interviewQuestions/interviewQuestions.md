@@ -2,6 +2,8 @@
 
 ## İçindekiler
 
+## İçindekiler
+
 - [React Nedir?](#react-nedir)
 - [React'ın Temel Özellikleri Nelerdir?](#reactın-temel-özellikleri-nelerdir)
   - [Bileşen Tabanlı Mimari](#bileşen-tabanlı-mimari)
@@ -10,12 +12,13 @@
   - [Tek Yönlü Veri Akışı](#tek-yönlü-veri-akışı)
 - [Virtual DOM Nedir ve Nasıl Çalışır?](#virtual-dom-nedir-ve-nasıl-çalışır)
 - [React Hookları Nelerdir?](#react-hookları-nelerdir)
-
   - [useState](#usestate)
   - [useEffect](#useeffect)
-
 - [React State Management Nasıl Yapılır?](#react-state-management-nasıl-yapılır)
-- [Redux ve Context API Nedir?](#redux-ve-context-api-nedir?)
+- [Redux ve Context API Nedir?](#redux-ve-context-api-nedir)
+- [Next.js Nedir?](#nextjs-nedir)
+- [Next.js Temel Özellikleri Nelerdir?](#nextjs-temel-özellikleri-nelerdir)
+- [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
 
 ## React Nedir?
 
