@@ -81,7 +81,7 @@
 
 - **Sunucu Taraflı Render**
 - **Statik Site Oluşturma(SEO)**
-- **API routes(rotaları) **
+- **API routes(rotaları)**
 - **Otomatik Kod Bölme**
 - **CSS ve Typescript gibi özellikleri performans ve SEO(statik site oluşturma)iyileştirirken geliştirme sürecini kolaylaştırır**
 
