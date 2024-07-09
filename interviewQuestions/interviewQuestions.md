@@ -68,3 +68,24 @@
 
 - **Redux:** Uygulama durumunu tek bir "store" içinde tutmak ve bu durumu yönetmek için "actions" ve "reducers" kullanmaktır. State yönetimi için kullanılan popüler bir kütüphanedir.
 - **Context API:** React'in içerisinde bulunan ve bileşenler arasında veri paylaşımını kolaylaştıran bir özelliktir. Küçük ve orta ölçekli uygulamalarda global state yönetimi için kullanılabilir.
+
+## Next.js Nedir?
+
+- Next.js react tabanlı bir frameworktür.
+
+## Next.js Temel Özellikleri Nelerdir?
+
+- **Sunucu Taraflı Render**
+- **Statik Site Oluşturma(SEO)**
+- **API routes(rotaları) **
+- **Otomatik Kod Bölme**
+- **CSS ve Typescript gibi özellikleri performans ve SEO(statik site oluşturma)iyileştirirken geliştirme sürecini kolaylaştırır**
+
+## SSR (Statik Side Rendering) ve CSR (Client Side Rendering) Nedir?
+
+- `SSR(Server Sider Rendering)` sayfa içeriğini sunucuda oluşturup tam `HTML` olarak tarayıcıya gönderilmesidir.
+- `CSR(Client Side Rendering)` sayfa içeriğinin tarayıcıda javascript ile oluşturulmasıdır.
+
+## SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Arasındaki Fark Nedir?
+
+- `SSR` sayfa içeriğinin sunucuda oluşturulup tam `HTML` olarak tarayıcıya gönderir,bu da daha hızlı ilk yükleme ce `SEO` avantajı sağlar Kullanım alanı olarak e-ticaret örnek verilebilir. `CSR` ise içeriği tarayıcıda `Javascript` ile oluşturur, başlangıçta yavaş olabilir ama kullanıcı etkileşimlerinde daha hızlı çalışır.Kullanım alanları sosyal medya platformları gibi verilebilir.
