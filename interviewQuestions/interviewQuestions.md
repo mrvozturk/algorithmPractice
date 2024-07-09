@@ -19,6 +19,7 @@
 - [Next.js Nedir?](#nextjs-nedir)
 - [Next.js Temel Özellikleri Nelerdir?](#nextjs-temel-özellikleri-nelerdir)
 - [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
+- [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
 
 ## React Nedir?
 
@@ -84,7 +85,7 @@
 - **Otomatik Kod Bölme**
 - **CSS ve Typescript gibi özellikleri performans ve SEO(statik site oluşturma)iyileştirirken geliştirme sürecini kolaylaştırır**
 
-## SSR (Statik Side Rendering) ve CSR (Client Side Rendering) Nedir?
+## SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?
 
 - `SSR(Server Sider Rendering)` sayfa içeriğini sunucuda oluşturup tam `HTML` olarak tarayıcıya gönderilmesidir.
 - `CSR(Client Side Rendering)` sayfa içeriğinin tarayıcıda javascript ile oluşturulmasıdır.
