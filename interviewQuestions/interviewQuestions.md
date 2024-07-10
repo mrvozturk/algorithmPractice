@@ -2,8 +2,6 @@
 
 ## İçindekiler
 
-## İçindekiler
-
 - [React Nedir?](#react-nedir)
 - [React'ın Temel Özellikleri Nelerdir?](#reactın-temel-özellikleri-nelerdir)
   - [Bileşen Tabanlı Mimari](#bileşen-tabanlı-mimari)
@@ -98,10 +96,13 @@
 
 ## Next.js ile SSR (Server Side Rendering) Example
 
-- **Farkları:**
-  1. Veri sunucuda çekilir ve bileşen yüklendiğinde hazır olarak gelir.
-  1. Kullanıcı sayfayı açtığında içerik hemen görünür, bu da hızlı ilk yükleme sağlar.
-  1. SEO açısından daha avantajlıdır çünkü arama motorları tam HTML içeriğini görür.
+**Farkları:**
+
+1. Veri sunucuda çekilir ve bileşen yüklendiğinde hazır olarak gelir.
+
+2. Kullanıcı sayfayı açtığında içerik hemen görünür, bu da hızlı ilk yükleme sağlar.
+
+3. SEO açısından daha avantajlıdır çünkü arama motorları tam HTML içeriğini görür.
 
 ```js
 //React ve Next.js bileşenleri import ediyoruz.
