@@ -21,6 +21,8 @@
 - [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
 - [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
 
+- [Next.js ile SSR (Server Side Rendering) Example](#nextjs-ile-ssr-server-side-rendering-example)
+
 ## React Nedir?
 
 - React, kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook tarafından geliştirilmektedir.
@@ -94,15 +96,12 @@
 
 - `SSR` sayfa içeriğinin sunucuda oluşturulup tam `HTML` olarak tarayıcıya gönderir,bu da daha hızlı ilk yükleme ve `SEO` avantajı sağlar Kullanım alanı olarak e-ticaret örnek verilebilir. `CSR` ise içeriği tarayıcıda `Javascript` ile oluşturur, başlangıçta yavaş olabilir ama kullanıcı etkileşimlerinde daha hızlı çalışır.Kullanım alanları sosyal medya platformları gibi verilebilir.
 
-### Next.js ile SSR (Server Side Rendering)
+## Next.js ile SSR (Server Side Rendering) Example
 
 - **Farkları:**
-
-  1. Veri sonucuda çekilir ve bileşen yüklendiğinde hazır olarak gelir
-
-  2. Kullanıcı sayfayı açtığında içerik hemen görünmez,veri çekildikten sonra ekranda gösterilir
-
-  3. SEO açısından daha zayıflatır çünkü arama motorlarından içeriği görebilmesi için Javascript'i çalıştırması gerekir
+  1. Veri sunucuda çekilir ve bileşen yüklendiğinde hazır olarak gelir.
+  1. Kullanıcı sayfayı açtığında içerik hemen görünür, bu da hızlı ilk yükleme sağlar.
+  1. SEO açısından daha avantajlıdır çünkü arama motorları tam HTML içeriğini görür.
 
 ```js
 //React ve Next.js bileşenleri import ediyoruz.
