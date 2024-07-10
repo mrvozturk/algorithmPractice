@@ -21,6 +21,8 @@
 
 - [Next.js ile SSR (Server Side Rendering) Example](#nextjs-ile-ssr-server-side-rendering-example)
 
+- [React ile CSR (Client Side Rendering) Farkları](#react-ile-csr-client-side-rendering-farkları)
+
 ## React Nedir?
 
 - React, kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript kütüphanesidir. Facebook tarafından geliştirilmektedir.
@@ -138,7 +140,7 @@ const Home = ({ data }) => {
 export default Home;
 ```
 
-## React ile CSR (Client Side Rendering)
+## React ile CSR (Client Side Rendering) Farkları
 
 **Farkları:**
 
