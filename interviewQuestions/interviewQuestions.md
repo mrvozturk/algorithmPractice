@@ -92,4 +92,4 @@
 
 ## SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Arasındaki Fark Nedir?
 
-- `SSR` sayfa içeriğinin sunucuda oluşturulup tam `HTML` olarak tarayıcıya gönderir,bu da daha hızlı ilk yükleme ce `SEO` avantajı sağlar Kullanım alanı olarak e-ticaret örnek verilebilir. `CSR` ise içeriği tarayıcıda `Javascript` ile oluşturur, başlangıçta yavaş olabilir ama kullanıcı etkileşimlerinde daha hızlı çalışır.Kullanım alanları sosyal medya platformları gibi verilebilir.
+- `SSR` sayfa içeriğinin sunucuda oluşturulup tam `HTML` olarak tarayıcıya gönderir,bu da daha hızlı ilk yükleme ve `SEO` avantajı sağlar Kullanım alanı olarak e-ticaret örnek verilebilir. `CSR` ise içeriği tarayıcıda `Javascript` ile oluşturur, başlangıçta yavaş olabilir ama kullanıcı etkileşimlerinde daha hızlı çalışır.Kullanım alanları sosyal medya platformları gibi verilebilir.
