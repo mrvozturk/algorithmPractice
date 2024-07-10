@@ -21,7 +21,7 @@
 
 - [Next.js ile SSR (Server Side Rendering) Example](#nextjs-ile-ssr-server-side-rendering-example)
 
-- [React ile CSR (Client Side Rendering) Farkları](#react-ile-csr-client-side-rendering-farkları)
+- [React ile CSR (Client Side Rendering) Example](#react-ile-csr-client-side-rendering-example)
 
 ## React Nedir?
 
@@ -140,7 +140,7 @@ const Home = ({ data }) => {
 export default Home;
 ```
 
-## React ile CSR (Client Side Rendering) Farkları
+## React ile CSR (Client Side Rendering) Example
 
 **Farkları:**
 
