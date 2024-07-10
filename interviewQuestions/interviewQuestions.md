@@ -93,3 +93,47 @@
 ## SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Arasındaki Fark Nedir?
 
 - `SSR` sayfa içeriğinin sunucuda oluşturulup tam `HTML` olarak tarayıcıya gönderir,bu da daha hızlı ilk yükleme ve `SEO` avantajı sağlar Kullanım alanı olarak e-ticaret örnek verilebilir. `CSR` ise içeriği tarayıcıda `Javascript` ile oluşturur, başlangıçta yavaş olabilir ama kullanıcı etkileşimlerinde daha hızlı çalışır.Kullanım alanları sosyal medya platformları gibi verilebilir.
+
+### Next.js ile SSR (Server Side Rendering)
+
+- **Farkları:**
+
+  1. Veri sonucuda çekilir ve bileşen yüklendiğinde hazır olarak gelir
+
+  2. Kullanıcı sayfayı açtığında içerik hemen görünmez,veri çekildikten sonra ekranda gösterilir
+
+  3. SEO açısından daha zayıflatır çünkü arama motorlarından içeriği görebilmesi için Javascript'i çalıştırması gerekir
+
+```js
+//React ve Next.js bileşenleri import ediyoruz.
+import React from 'react';
+
+//getServerSideProps fonksiyonu sayfa yüklendiğinde sunucu tarafında çalışır.
+//Bu fonksiyon sunucuda veri çekme işlemlerini gerçekleştirmek için kullanılır
+
+export async function getServerSideProps() {
+  // fetch API fonksiyonu ile veri çekme işlemlerini gerçekleştiriyoruz.
+  const res = await fetch('https://api.example.com/data');
+  const data = await res.json();
+
+  // veri sayfa bileşenine props olarak geçilir
+  return {
+    props: { data } // data props olarak bileşene aktarılır
+  };
+}
+
+//Home bileşeni sunucuda çekilem veriyi görüntülemek için kullanılır
+const Home = ({ data }) => {
+  return (
+    <div>
+      <h1>Server-Side Rendered Page</h1>
+      {/* sunucuda alınan veri JSON formatında ekranda gösterilir*/}
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </div>
+  );
+};
+
+// home bileşeni varsayılan olarak dışa aktarılır
+
+export default Home;
+```
