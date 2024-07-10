@@ -137,3 +137,42 @@ const Home = ({ data }) => {
 
 export default Home;
 ```
+
+## React ile CSR (Client Side Rendering)
+
+**Farkları:**
+
+1. Veri istemci tarafında bileşen yüklendikten sonra çekilir.
+
+2. Kullanıcı sayfayı açtığında içerik hemen görünmez, veri çekildikten sonra ekranda gösterilir
+
+3. SEO açısından daha zayıftır çünkü arama motorlarının içeriği görebilmesi için Javascript'i çalıştırması gerekir.
+
+```js
+// React kütüphanesi import edilir
+import React, { useState, useEffect } from 'react';
+
+// App bileşnei tanımlandırılır
+const App = () => {
+  // useState ile data ve setData adında iki değişken tanımlanır
+  const [data, setData] = useState(null);
+
+  // useEffect hook'u ile bileşen yüklendiğinde çalışacak bir fonksiyon tanımlanır
+  useEffect(() => {
+    //Fetch API kullanarak veri çekme işlemi yapılır
+    fetch('https://api.example.com/data')
+      .then(res => res.json())
+      .then(data => setData(data));
+  }, []); // boş bağımlılık dizisi,useEffect'in sadece bileşen yüklendikten sonra çalışmasını sağlar.
+  return (
+    <div>
+      <h1>Server-Side Rendered Page</h1>
+      {/* sunucuda alınan veri JSON formatında ekranda gösterilir*/}
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </div>
+  );
+};
+
+//App bileşeni varsayılan olarak dışa aktarılır
+export default App;
+```
