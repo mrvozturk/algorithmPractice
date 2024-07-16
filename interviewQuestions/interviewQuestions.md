@@ -30,6 +30,7 @@
   - [getStaticProps Ne Zaman Kullanılır?](#getstaticprops-ne-zaman-kullanılır)
   - [getStaticProps Avantajları](#getstaticprops-avantajları)
   - [getStaticProps Dezavantajları](#getstaticprops-dezavantajları)
+- [getServerSideProps][#getserversideprops]
   - [getServerSideProps Nedir?](#getserversideprops-nedir)
   - [getServerSideProps Ne Zaman Kullanılır?](#getserversideprops-ne-zaman-kullanılır)
   - [getServerSideProps Avantajları](#getserversideprops-avantajları)
