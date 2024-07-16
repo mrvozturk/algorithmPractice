@@ -17,11 +17,8 @@
 - [Next.js Nedir?](#nextjs-nedir)
 - [Next.js Temel Özellikleri Nelerdir?](#nextjs-temel-özellikleri-nelerdir)
 - [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
-- [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
-
-- [Next.js ile SSR (Server Side Rendering) Example](#nextjs-ile-ssr-server-side-rendering-example)
-
-- [React ile CSR (Client Side Rendering) Example](#react-ile-csr-client-side-rendering-example)
+- [Next.js ile SSR (Server Side Rendering) Örneği](#nextjs-ile-ssr-server-side-rendering-örneği)
+- [React ile CSR (Client Side Rendering) Örneği](#react-ile-csr-client-side-rendering-örneği)
 - [Next.js Static Site Generation (Statik Site Oluşturma) Nedir?](#nextjs-static-site-generation-statik-site-oluşturma-nedir)
 - [Static Site Generation Nasıl Yapılır?](#static-site-generation-nasıl-yapılır)
 - [Statik Site Oluşturma Avantajları](#statik-site-oluşturma-avantajları)
@@ -30,7 +27,7 @@
   - [getStaticProps Ne Zaman Kullanılır?](#getstaticprops-ne-zaman-kullanılır)
   - [getStaticProps Avantajları](#getstaticprops-avantajları)
   - [getStaticProps Dezavantajları](#getstaticprops-dezavantajları)
-- [getServerSideProps][#getserversideprops]
+- [getServerSideProps](#getserversideprops)
   - [getServerSideProps Nedir?](#getserversideprops-nedir)
   - [getServerSideProps Ne Zaman Kullanılır?](#getserversideprops-ne-zaman-kullanılır)
   - [getServerSideProps Avantajları](#getserversideprops-avantajları)
