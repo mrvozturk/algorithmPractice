@@ -21,16 +21,20 @@
 - [React ile CSR (Client Side Rendering) Örneği](#react-ile-csr-client-side-rendering-örneği)
 - [Next.js Static Site Generation (Statik Site Oluşturma) Nedir?](#nextjs-static-site-generation-statik-site-oluşturma-nedir)
 - [Static Site Generation Nasıl Yapılır?](#static-site-generation-nasıl-yapılır)
-- [Statik Site Oluşturma Avantajları](#statik-site-oluşturma-avantajları)
-- [getStaticProps Nedir?](#getstaticprops-nedir)
-- [getStaticProps Ne Zaman Kullanılır?](#getstaticprops-ne-zaman-kullanılır)
-- [getStaticProps Avantajları](#getstaticprops-avantajları)
-- [getStaticProps Dezavantajları](#getstaticprops-dezavantajları)
-- [getServerSideProps Nedir?](#getserversideprops-nedir)
-- [getServerSideProps Ne Zaman Kullanılır?](#getserversideprops-ne-zaman-kullanılır)
-- [getServerSideProps Avantajları](#getserversideprops-avantajları)
-- [getServerSideProps Dezavantajları](#getserversideprops-dezavantajları)
-- [getStaticProps ve getServerSideProps Farklılıkları](#getstaticprops-ve-getserversideprops-farklılıkları)
+
+- [getStaticProps](#getstaticprops)
+
+  - [getStaticProps Nedir?](#getstaticprops-nedir)
+  - [getStaticProps Ne Zaman Kullanılır?](#getstaticprops-ne-zaman-kullanılır)
+  - [getStaticProps Avantajları ve Dezavantajları?](#getstaticprops-avantajları-ve-dezavantajları)
+
+- [getServerSideProps](#getserversideprops)
+
+  - [getServerSideProps Nedir?](#getserversideprops-nedir)
+  - [getServerSideProps Ne Zaman Kullanılır?](#getserversideprops-ne-zaman-kullanılır)
+  - [getServerSideProps Avantajları ve Dezavantajları?](#getserversideprops-avantajları-ve-dezavantajları)
+
+- [getStaticProps ve getServerSideProps Farklılıkları?](#getstaticprops-ve-getserversideprops-farklılıkları)
 
 ## React Nedir?
 
@@ -200,44 +204,42 @@ export default App;
 
 - Sayfalar önceden oluşturulduğu için hızlı yükleme süreleri sağlar, statik HTML arama motorları tarafından daha kolay tarandığı için daha iyi SEO sunar, ve her istekte veri çekmek yerine önceden oluşturulmuş sayfalar sunulduğu için sunucu yükü düşüktür. Bu sayede hem kullanıcı deneyimini iyileştiririz hem de performansı artırırız
 
+# getStaticProps
 
-## getStaticProps Nedir?
+### getStaticProps Nedir?
 
 - `getStaticProps` sayfanın derleme zamanında statik olarak oluşturulmaısnı sağlar.
   API'dan veri çekip bu verileri sayfa bileşenlerine props oalrak aktarıyoruz.Bu sayede önceden oluşturulmuş `HTML` dosyaları kullanarak sayfalar hızlı yüklenir.
 
-## getStaticProps Ne Zaman Kullanılır?
+### getStaticProps Ne Zaman Kullanılır?
 
 - `getStaticProps` statik içeriğe sahip nadiren değişen sayfalar için idealdir. örneğin blog yazıları ve ürün katalogları gibi
 
-## getStaticProps Avantajları?
+### getStaticProps Avantajları ve Dezavantajları?
 
-- Yüksek performans elde edebiliriz,`SEO` dostu sayfalar oluşturabiliriz ve sunucu yükünü azaltabiliriz.
+- **getStaticProps Avantajları:** Yüksek performans elde edebiliriz,`SEO` dostu sayfalar oluşturabiliriz ve sunucu yükünü azaltabiliriz.
 
-## getStaticProps Dezavantajları?
+* **getStaticProps Dezavantajları:** Dinamik veriler için uygun değildir, yeniden oluşturma gerektiğinde gecikme olabilir ve büyük veri setlerinde yapı süresi uzayabilir.
 
-- Dinamik veriler için uygun değildir, yeniden oluşturma gerektiğinde gecikme olabilir ve büyük veri setlerinde yapı süresi uzayabilir.
+# getServeSideProps
 
-
-## getServerSideProps Nedir?
+### getServerSideProps Nedir?
 
 - `getServerSideProps`, next.js'de her sayfa istendiğinde sunucu tarafında çalışır. Gerekli verileri toplayarak sayfanın bileşenlerine props olarak geçirir ve böylece dinamik içerikler sunar.
 
-## getServerSideProps Ne Zaman Kullanılır?
+### getServerSideProps Ne Zaman Kullanılır?
 
 - `getServerSideProps`, dinamik ve sık değişen sayfalar için uygundur; örneğin, kullanıcıya özel veriler ve sık güncellenen içerikler için idealdir.
 
-## getServerSideProps Avantajları?
+### getServerSideProps Avantajları ve Dezavantajları?
 
-- Yüksek performans elde edebiliriz, SEO dostu sayfalar oluşturabiliriz ve sunucu yükünü azaltabiliriz.
+- **getServerSideProps Avantajları:** Yüksek performans elde edebiliriz, SEO dostu sayfalar oluşturabiliriz ve sunucu yükünü azaltabiliriz.
 
-## getServerSideProps Dezavantajları?
+- **getServeSideProps Dezavantajları:** Her istekte sunucuda çalıştığı için yavaş yüklenme sürelerine ve artan sunucu yüküne neden olabilir, bu da statik sayfalara göre daha az performanslı olmasına yol açar.
 
-- Her istekte sunucuda çalıştığı için yavaş yüklenme sürelerine ve artan sunucu yüküne neden olabilir, bu da statik sayfalara göre daha az performanslı olmasına yol açar.
+### getStaticProps ve getServerSideProps Farklılıkları?
 
-## getStaticProps ve getServerSideProps Farklılıkları?
-
-- `getStaticProps` yapı(build) zamanı çalışarak sayfaları statik `HTML` olarak oluşturur,
+- **getStaticProps:** yapı(build) zamanı çalışarak sayfaları statik `HTML` olarak oluşturur,
   nadiren değişen veriler için idealdir ve yüksek performans sunar.
 
-- `getServerSideProps` her sayfa yenilendiğinde sunucu tarafında çalışır.Dinamik ve sık değişen veriler için uygundur acnak sunucuda yük oluşturabilir.
+- **getServerSideProps:** her sayfa yenilendiğinde sunucu tarafında çalışır.Dinamik ve sık değişen veriler için uygundur acnak sunucuda yük oluşturabilir.
