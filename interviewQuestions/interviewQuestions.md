@@ -221,7 +221,7 @@ export default App;
 
 * **getStaticProps Dezavantajları:** Dinamik veriler için uygun değildir, yeniden oluşturma gerektiğinde gecikme olabilir ve büyük veri setlerinde yapı süresi uzayabilir.
 
-# getServeSideProps
+# getServerSideProps
 
 ### getServerSideProps Nedir?
 
