@@ -1,6 +1,7 @@
 function checkIncreasingOrder(array) {
   // bir fonksiyon oluşturuyoruz ve bu fonksiyona parametre olarak bir dizi veriyoruz
   for (let i = 0; i < array.length - 1; i++) {
+    // dizinin son elemanına ulaşmadan önceki elemanlarla karşılaştırma yapmak için array.length-1'i döndürüyoruz
     // dizideki elemanları tek tek kontrol ediyoruz
     if (array[i] >= array[i + 1]) {
       // eğer i değeri i+1'den büyük veya eşitse
