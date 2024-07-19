@@ -37,11 +37,11 @@
 
 ## useState Hook'u Mounting Aşamasında Nasıl Kullanılır, Nasıl Çalışır?
 
-- useState Hook'u, bir bileşenin mount aşamasında başlangıç durumunu tanımlar ve bu durumu güncellemek için bir fonksiyon döner. Durum her güncellendiğinde bileşen yeniden render edilir
+- useState hook'u, bir bileşenin mount aşamasında, bileşen ilk kez DOM'a eklendiğinde başlangıç değerini ayarlayarak state yönetimini sağlar ve state'i güncellemek için bir fonksiyon döner. Durum her güncellendiğinde bileşen yeniden render edilir
 
 ## useEffect Hook'u Mounting Aşamasında Nasıl Çalışır ve Kullanılır?
 
-- useEffect, bileşen ilk kez render edildiğinde yan etki (side effect) gerçekleştirmek için kullanılır. Mounting aşamasında çalışması için bağımlılık dizisi (dependency array) boş bırakılır ([]).
+- useEffect hook'u, bir bileşenin mount aşamasında, bileşen ilk kez render edildiğinde çalışarak yan etkilerin (side effects) yönetimini sağlar, örneğin veri fetch işlemleri gerçekleştirilir. Mounting aşamasında çalışması için bağımlılık dizisi (dependency array) boş bırakılır ([]).
 
 ```js
 useEffect(() => {
@@ -51,11 +51,11 @@ useEffect(() => {
 
 ## useState Hook'u Updating Aşamasında Nasıl Kullanılır, Nasıl Çalışır?
 
-- useState Hook'u, bileşen durumunu tanımlayıp günceller. Updating aşamasında, setState ile yeni değer atanır ve bileşen yeniden render edilerek React'in sanal DOM'u optimize edilir
+- useState hook'u, bir bileşenin updating aşamasında, state güncelleme fonksiyonu çağrıldığında bileşeni yeniden render ederek state'i günceller ve yeni state değerini döner
 
 ## useEffect Hook'u Updating Aşamasında Nasıl Çalışır, Nasıl Kullanılır?
 
-- useEffect Hook'u, bileşen güncellendiğinde yan etki (side effect) gerçekleştirmek için kullanılır. Updating aşamasında çalışması için bağımlılık dizisine (dependency array) durum veya props değişkenleri eklenir ([state, prop]).
+- useEffect hook'u, bir bileşenin updating aşamasında, bağımlılık dizisindeki değerler değiştiğinde çalışarak yan etkilerin (side effects) yönetimini sağlar, örneğin belirli state veya prop değerleri değiştiğinde yan etkiler gerçekleştirilir.
 
 ```js
 useEffect(() => {
@@ -65,7 +65,7 @@ useEffect(() => {
 
 ## useMemo Hook'u Updating Aşamasında Nasıl Kullanılır, Nasıl Çalışır?
 
-- useMemo Hook'u, bileşen yeniden render edildiğinde, belirtilen bağımlılıklar değişmediği sürece pahalı hesaplamaların (örneğin, büyük veri setlerinin işlenmesi veya karmaşık matematiksel işlemler) yeniden yapılmasını engellemek için kullanılır.
+- useMemo hook'u, hesaplanmış değerleri (computed values) saklar. Bağımlılık dizisindeki (dependency array) değerler değiştiğinde useMemo hesaplama yapar ve yeniden hesaplanan değeri döner, böylece gereksiz hesaplamalar önlenir, örneğin, büyük veri setlerinin işlenmesi veya karmaşık matematiksel işlemler
 
 ```js
 const memoizedValue = useMemo(() => computeExpensiveValue(count), [count]);
@@ -73,7 +73,7 @@ const memoizedValue = useMemo(() => computeExpensiveValue(count), [count]);
 
 ## useCallback Hook'u Updating Aşamasında Nasıl Çalışır ve Kullanılır?
 
-- useCallback Hook'u, işlevin referansını memoize ederek (önceden hesaplanmış sonucu saklama) performansı artırır. Bu referans, işlevin bellekteki adresini temsil eder ve gereksiz yeniden oluşturmayı önler. Updating aşamasında, bağımlılık dizisinde belirtilen durum (count) veya prop (items) değiştiğinde referans güncellenir.
+- useCallback hook'u, işlev referanslarını (function references) saklar. Bağımlılık dizisindeki (dependency array) değerler değiştiğinde useCallback yeni bir geri çağrım fonksiyonu döner, böylece gereksiz yeniden oluşturma işlemleri önlenir, örneğin, bir buton tıklama işlevinin referansı buttonId bağımlılığına bağlıdır.
 
 ```js
 const memoizedCallback = useCallback(() => {
