@@ -65,7 +65,7 @@ useEffect(() => {
 
 ## useMemo Hook'u Updating Aşamasında Nasıl Kullanılır, Nasıl Çalışır?
 
-- useMemo Hook'u, hesaplamalı değerleri saklayarak performansı artırır. Updating aşamasında, bağımlılık dizisinde (dependency array) durum (örneğin, count) veya prop (örneğin, items) gibi değişkenler belirtilir; bu değişkenler değiştiğinde hesaplama yeniden yapılır.
+- useMemo Hook'u, bileşen yeniden render edildiğinde, belirtilen bağımlılıklar değişmediği sürece pahalı hesaplamaların (örneğin, büyük veri setlerinin işlenmesi veya karmaşık matematiksel işlemler) yeniden yapılmasını engellemek için kullanılır.
 
 ```js
 const memoizedValue = useMemo(() => computeExpensiveValue(count), [count]);
