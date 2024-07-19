@@ -3,7 +3,7 @@
 - [useState Hook'u Mounting Aşamasında Nasıl Kullanılır, Nasıl Çalışır?](#usestate-hooku-mounting-aşamasında-nasıl-kullanılır-nasıl-çalışır)
 - [useEffect Hook'u Mounting Aşamasında Nasıl Çalışır ve Kullanılır?](#useeffect-hooku-mounting-aşamasında-nasıl-çalışır-ve-kullanılır)
 - [useState Hook'u Updating Aşamasında Nasıl Kullanılır, Nasıl Çalışır?](#usestate-hooku-updating-aşamasında-nasıl-kullanılır-nasıl-çalışır)
-- [useEffect Hook'u Updating Aşamasında Nasıl Çalışır, Nasıl Kullanılır?](#useeffect-hooku-updating-aşamasında-nasıl-çalışır-nasıl-kullanılır)
+- [useEffect Hook'u Updating Aşamasında Nasıl Çalışır ve Kullanılır?](#useeffect-hooku-updating-aşamasında-nasıl-çalışır-nasıl-kullanılır)
 - [useMemo Hook'u Updating Aşamasında Nasıl Kullanılır, Nasıl Çalışır?](#usememo-hooku-updating-aşamasında-nasıl-kullanılır-nasıl-çalışır)
 - [useCallback Hook'u Updating Aşamasında Nasıl Çalışır, Nasıl Kullanılır?](#usecallback-hooku-updating-aşamasında-nasıl-çalışır-nasıl-kullanılır)
 - [useEffect Hook'u Unmounting Aşamasında Nasıl Çalışır, Nasıl Kullanılır?](#useeffect-hooku-unmounting-aşamasında-nasıl-çalışır-nasıl-kullanılır)
