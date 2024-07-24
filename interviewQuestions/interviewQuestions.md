@@ -53,7 +53,7 @@
 
 ### JSX
 
-- JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
+- JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir söz dizimidir.
 
 ### Sanal DOM
 
@@ -137,7 +137,7 @@ export async function getServerSideProps() {
   };
 }
 
-//Home bileşeni sunucuda çekilem veriyi görüntülemek için kullanılır
+//Home bileşeni sunucuda çekilen veriyi görüntülemek için kullanılır
 const Home = ({ data }) => {
   return (
     <div>
@@ -198,7 +198,7 @@ export default App;
 
 ## Static Site Generation Nasıl Yapılır?
 
-- Statik site oluşturma next.js derleme zamanında `getStaticProps` fonksiyonunu kullanarak verileri alır ve statik sayfaları oluştururuz. Böylece kullanıcılar sayfaları talep ettiğinde,suncuuya her seferinde veri çekmeye gerek kalmadan önceden oluştutulmuş statik `HTML`sayfaları hemen yüklenir.
+- Statik site oluşturma next.js derleme zamanında `getStaticProps` fonksiyonunu kullanarak verileri alır ve statik sayfaları oluştururuz. Böylece kullanıcılar sayfaları talep ettiğinde,sunucuya her seferinde veri çekmeye gerek kalmadan önceden oluşturulmuş statik `HTML`sayfaları hemen yüklenir.
 
 ## Statik Site Oluşturma Avantajları?
 
@@ -208,8 +208,8 @@ export default App;
 
 ### getStaticProps Nedir?
 
-- `getStaticProps` sayfanın derleme zamanında statik olarak oluşturulmaısnı sağlar.
-  API'dan veri çekip bu verileri sayfa bileşenlerine props oalrak aktarıyoruz.Bu sayede önceden oluşturulmuş `HTML` dosyaları kullanarak sayfalar hızlı yüklenir.
+- `getStaticProps` sayfanın derleme zamanında statik olarak oluşturulmasını sağlar.
+  API'dan veri çekip bu verileri sayfa bileşenlerine props olarak aktarıyoruz.Bu sayede önceden oluşturulmuş `HTML` dosyaları kullanarak sayfalar hızlı yüklenir.
 
 ### getStaticProps Ne Zaman Kullanılır?
 
@@ -239,7 +239,7 @@ export default App;
 
 ### getStaticProps ve getServerSideProps Farklılıkları?
 
-- **getStaticProps:** yapı(build) zamanı çalışarak sayfaları statik `HTML` olarak oluşturur,
+- **getStaticProps:** Yapı(build) zamanı çalışarak sayfaları statik `HTML` olarak oluşturur,
   nadiren değişen veriler için idealdir ve yüksek performans sunar.
 
-- **getServerSideProps:** her sayfa yenilendiğinde sunucu tarafında çalışır.Dinamik ve sık değişen veriler için uygundur acnak sunucuda yük oluşturabilir.
+- **getServerSideProps:** Her sayfa yenilendiğinde sunucu tarafında çalışır.Dinamik ve sık değişen veriler için uygundur acnak sunucuda yük oluşturabilir.
