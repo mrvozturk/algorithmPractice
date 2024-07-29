@@ -17,11 +17,24 @@
 - [Next.js Nedir?](#nextjs-nedir)
 - [Next.js Temel Özellikleri Nelerdir?](#nextjs-temel-özellikleri-nelerdir)
 - [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
-- [SSR (Server-Side Rendering) ve CSR (Client-Side Rendering) Nedir?](#ssr-server-side-rendering-ve-csr-client-side-rendering-nedir)
+- [Next.js ile SSR (Server Side Rendering) Örneği](#nextjs-ile-ssr-server-side-rendering-örneği)
+- [React ile CSR (Client Side Rendering) Örneği](#react-ile-csr-client-side-rendering-örneği)
+- [Next.js Static Site Generation (Statik Site Oluşturma) Nedir?](#nextjs-static-site-generation-statik-site-oluşturma-nedir)
+- [Static Site Generation Nasıl Yapılır?](#static-site-generation-nasıl-yapılır)
 
-- [Next.js ile SSR (Server Side Rendering) Example](#nextjs-ile-ssr-server-side-rendering-example)
+- [getStaticProps](#getstaticprops)
 
-- [React ile CSR (Client Side Rendering) Example](#react-ile-csr-client-side-rendering-example)
+  - [getStaticProps Nedir?](#getstaticprops-nedir)
+  - [getStaticProps Ne Zaman Kullanılır?](#getstaticprops-ne-zaman-kullanılır)
+  - [getStaticProps Avantajları ve Dezavantajları?](#getstaticprops-avantajları-ve-dezavantajları)
+
+- [getServerSideProps](#getserversideprops)
+
+  - [getServerSideProps Nedir?](#getserversideprops-nedir)
+  - [getServerSideProps Ne Zaman Kullanılır?](#getserversideprops-ne-zaman-kullanılır)
+  - [getServerSideProps Avantajları ve Dezavantajları?](#getserversideprops-avantajları-ve-dezavantajları)
+
+- [getStaticProps ve getServerSideProps Farklılıkları?](#getstaticprops-ve-getserversideprops-farklılıkları)
 
 ## React Nedir?
 
@@ -40,7 +53,7 @@
 
 ### JSX
 
-- JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir sözdizimidir.
+- JavaScript içinde HTML benzeri kod yazmayı mümkün kılan bir söz dizimidir.
 
 ### Sanal DOM
 
@@ -124,7 +137,7 @@ export async function getServerSideProps() {
   };
 }
 
-//Home bileşeni sunucuda çekilem veriyi görüntülemek için kullanılır
+//Home bileşeni sunucuda çekilen veriyi görüntülemek için kullanılır
 const Home = ({ data }) => {
   return (
     <div>
@@ -178,3 +191,55 @@ const App = () => {
 //App bileşeni varsayılan olarak dışa aktarılır
 export default App;
 ```
+
+## Next.js Static Site Generation (Statik Site Oluşturma) Nedir?
+
+- Static site generation next.js ile statik `HTML` sayfalarını önceden oluşturup sunucuda barındırarak hızlı ve `SEO` dostu web siteleri yapmamızı sağlar.
+
+## Static Site Generation Nasıl Yapılır?
+
+- Statik site oluşturma next.js derleme zamanında `getStaticProps` fonksiyonunu kullanarak verileri alır ve statik sayfaları oluştururuz. Böylece kullanıcılar sayfaları talep ettiğinde,sunucuya her seferinde veri çekmeye gerek kalmadan önceden oluşturulmuş statik `HTML`sayfaları hemen yüklenir.
+
+## Statik Site Oluşturma Avantajları?
+
+- Sayfalar önceden oluşturulduğu için hızlı yükleme süreleri sağlar, statik HTML arama motorları tarafından daha kolay tarandığı için daha iyi SEO sunar, ve her istekte veri çekmek yerine önceden oluşturulmuş sayfalar sunulduğu için sunucu yükü düşüktür. Bu sayede hem kullanıcı deneyimini iyileştiririz hem de performansı artırırız
+
+# getStaticProps
+
+### getStaticProps Nedir?
+
+- `getStaticProps` sayfanın derleme zamanında statik olarak oluşturulmasını sağlar.
+  API'dan veri çekip bu verileri sayfa bileşenlerine props olarak aktarıyoruz.Bu sayede önceden oluşturulmuş `HTML` dosyaları kullanarak sayfalar hızlı yüklenir.
+
+### getStaticProps Ne Zaman Kullanılır?
+
+- `getStaticProps` statik içeriğe sahip nadiren değişen sayfalar için idealdir. örneğin blog yazıları ve ürün katalogları gibi
+
+### getStaticProps Avantajları ve Dezavantajları?
+
+- **getStaticProps Avantajları:** Yüksek performans elde edebiliriz,`SEO` dostu sayfalar oluşturabiliriz ve sunucu yükünü azaltabiliriz.
+
+* **getStaticProps Dezavantajları:** Dinamik veriler için uygun değildir, yeniden oluşturma gerektiğinde gecikme olabilir ve büyük veri setlerinde yapı süresi uzayabilir.
+
+# getServerSideProps
+
+### getServerSideProps Nedir?
+
+- `getServerSideProps`, next.js'de her sayfa istendiğinde sunucu tarafında çalışır. Gerekli verileri toplayarak sayfanın bileşenlerine props olarak geçirir ve böylece dinamik içerikler sunar.
+
+### getServerSideProps Ne Zaman Kullanılır?
+
+- `getServerSideProps`, dinamik ve sık değişen sayfalar için uygundur; örneğin, kullanıcıya özel veriler ve sık güncellenen içerikler için idealdir.
+
+### getServerSideProps Avantajları ve Dezavantajları?
+
+- **getServerSideProps Avantajları:** Yüksek performans elde edebiliriz, SEO dostu sayfalar oluşturabiliriz ve sunucu yükünü azaltabiliriz.
+
+- **getServeSideProps Dezavantajları:** Her istekte sunucuda çalıştığı için yavaş yüklenme sürelerine ve artan sunucu yüküne neden olabilir, bu da statik sayfalara göre daha az performanslı olmasına yol açar.
+
+### getStaticProps ve getServerSideProps Farklılıkları?
+
+- **getStaticProps:** Yapı(build) zamanı çalışarak sayfaları statik `HTML` olarak oluşturur,
+  nadiren değişen veriler için idealdir ve yüksek performans sunar.
+
+- **getServerSideProps:** Her sayfa yenilendiğinde sunucu tarafında çalışır.Dinamik ve sık değişen veriler için uygundur acnak sunucuda yük oluşturabilir.
