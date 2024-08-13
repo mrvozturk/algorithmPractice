@@ -208,6 +208,40 @@ export default App;
 
 ### getStaticProps Nedir?
 
+```js
+// pages/index.js
+import React from 'react';
+
+// getStaticProps fonksiyonu sayfa yüklenmeden önce çalışır ve bu sayfaya veri sağlar
+export async function getStaticProps() {
+  // Burada bir API çağrısı yapılabilir veya bir veri tabanından veri çekilebilir
+  // Biz bu örnekte statik bir veri oluşturuyoruz
+  const data = {
+    title: 'Merhaba, Next.js!',
+    description: 'Bu bir getStaticProps örneğidir.'
+  };
+
+  // Verileri props olarak döndürüyoruz, bu da sayfa bileşenine aktarılır
+  return {
+    props: {
+      data // data, sayfa bileşenine props olarak geçilecek
+    }
+  };
+}
+
+// Ana sayfa bileşeni, getStaticProps ile alınan verileri props olarak alır
+const Home = ({ data }) => {
+  return (
+    <div>
+      <h1>{data.title}</h1>
+      <p>{data.description}</p>
+    </div>
+  );
+};
+
+export default Home;
+```
+
 - `getStaticProps` sayfanın derleme zamanında statik olarak oluşturulmasını sağlar.
   API'dan veri çekip bu verileri sayfa bileşenlerine props olarak aktarıyoruz.Bu sayede önceden oluşturulmuş `HTML` dosyaları kullanarak sayfalar hızlı yüklenir.
 
@@ -226,6 +260,40 @@ export default App;
 ### getServerSideProps Nedir?
 
 - `getServerSideProps`, next.js'de her sayfa istendiğinde sunucu tarafında çalışır. Gerekli verileri toplayarak sayfanın bileşenlerine props olarak geçirir ve böylece dinamik içerikler sunar.
+
+```js
+// pages/index.js
+import React from 'react';
+
+// getServerSideProps fonksiyonu her istekte sunucuda çalışır ve bu sayfaya veri sağlar
+export async function getServerSideProps() {
+  // Burada bir API çağrısı yapılabilir veya bir veri tabanından veri çekilebilir
+  // Biz bu örnekte statik bir veri oluşturuyoruz
+  const data = {
+    title: 'Merhaba, Sunucu Tarafı!',
+    description: 'Bu bir getServerSideProps örneğidir.'
+  };
+
+  // Verileri props olarak döndürüyoruz, bu da sayfa bileşenine aktarılır
+  return {
+    props: {
+      data // data, sayfa bileşenine props olarak geçilecek
+    }
+  };
+}
+
+// Ana sayfa bileşeni, getServerSideProps ile alınan verileri props olarak alır
+const Home = ({ data }) => {
+  return (
+    <div>
+      <h1>{data.title}</h1>
+      <p>{data.description}</p>
+    </div>
+  );
+};
+
+export default Home;
+```
 
 ### getServerSideProps Ne Zaman Kullanılır?
 
